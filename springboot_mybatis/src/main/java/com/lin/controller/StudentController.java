@@ -13,9 +13,20 @@ import java.util.List;
 public class StudentController {
     @Autowired
     private StudentService studentService;
+
     @RequestMapping("/query")
     public List<Student> queryAll(){
         return studentService.queryAll();
+    }
+
+    @RequestMapping("/getStudent")
+    public List<Student> getStudent(int id){
+        return studentService.getStudent(id);
+    }
+
+    @RequestMapping("/deleteStudent")
+    public void deleteEmpt(int id){
+        studentService.deleteStudent(id);
     }
 
 }

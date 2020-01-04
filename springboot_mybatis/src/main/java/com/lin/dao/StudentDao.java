@@ -17,4 +17,6 @@ public interface StudentDao {
     public int updateStudent(Student student);
     //查
     public List<Student> queryAll();
+    //查询单个员工
+    public List<Student> getStudent(int id);
 }

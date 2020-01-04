@@ -13,4 +13,5 @@ public interface StudentService {
     public int updateStudent(Student student);
     //查
     public List<Student> queryAll();
+    public List<Student> getStudent(int id);
 }
