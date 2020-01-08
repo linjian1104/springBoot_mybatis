@@ -14,7 +14,7 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    @RequestMapping("/query")
+    @RequestMapping("query")
     public List<Student> queryAll(){
         return studentService.queryAll();
     }
